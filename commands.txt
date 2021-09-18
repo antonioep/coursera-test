@@ -1,0 +1,3 @@
+- browser-sync start --server --directory --files "*
+- git add . / git commit -m "" / git push
+- 
