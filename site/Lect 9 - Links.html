@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+        <meta charset="utf-8">
+        <title>Lecture 9 - Hyper links</title>
+    </head>
+    <body>
+        <div id="top"> INDEX </div>
+        <ol>
+            <li> <a href="#sec1"> Internal Links </a></li>
+            <li> <a href="#sec2"> External Links </a></li>
+            <li> <a href="#sec3"> Reference Links </a></li>
+        </ol>
+
+        <h1> Internal link </h1>
+        <section id="sec1">
+            We can link to a file in the same directory as this HTML file like this: 
+            <a href="Lect 8 - characters.html" title="Lecture 8"> 
+                Linking to a file in the same directory
+            </a>
+
+            <a href="Lect 8 - characters.html" title="Lecture 8"> 
+                <div> DIV Linking to a file in the same directory </div>
+            </a>
+            
+            <p>
+                &lt;a&gt; is both flow content and phrasing content
+            </p>
+        </section>
+
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+
+        <h1> External links</h2>
+        <section id="sec2">
+        <p>
+            Let's link to my sister's shop website!
+            <a href="http://www.maramama.es" title = "MARAMAMA"> 
+                <div>Link to my sister's website</div>
+            </a>
+        </p>
+        <p> Previous link did not open a new tab but this will using the "target"</p>
+        <a href="http://www.maramama.es" title = "MARAMAMA" target="_blank"> 
+            <div>Link to my sister's website</div>
+        </a>
+        </section>
+        
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+
+        <section id="sec3">
+        <h1> Pointing to internal sections</h3>
+        <p> This can be done with same command "&lt;a&gt;" but 
+            and "id" will need to be added to each section we
+            want to reference to. 
+        </p>
+        </section>
+
+        <a href="#top"> Back to the top </a>
+    </body>
+</html>
