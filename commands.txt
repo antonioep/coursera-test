@@ -1,3 +1,9 @@
 - making easier to track changes: browser-sync start --server --directory --files "*
 - git add . / git commit -m "" / git push
 - github webpage: https://antonioep.github.io/coursera-test/site/
+
+
+
+
+-> USEFUL INFO
+  - html kinds of contents: "https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html"
