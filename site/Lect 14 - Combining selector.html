@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Lecture 14 - Combining Selectors </title>
+        <style>
+            p.myclass {
+                width: 200px;
+                font-size: 20px; 
+            }
+            article > p {
+                width: 200px;
+                color: aquamarine;
+            }
+            article span {
+                width: 200px;
+                color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Element with class selector</h1>
+        <p> In this case, we can do it as follow in the declaration: p.myclass = {}.
+            No space between the first and second selector. In this case, it means that this 
+            style will only be applied to the "p" selector with specifies "myclass" </p>
+        <p class="myclass"> this is an example as this paragraph has the style of "myclass" but previous do not.</p>
+        
+        <h1> Child selector </h1>
+        <p> In this case, we define the style of a selector that is a child of other selectors. The 
+            syntax used is as follows: parent &gt; child {} (i.e. article &gt; p {} - every p that is a direct child of article); 
+        </p> 
+        <article> 
+            <p> This is an example of child selector. This paragraph is a direct child of an article selector.</p>
+            <div> <p> This paragraph is NOT a direct child but subchild. </p></div>
+        </article>
+        <p> However, this paragraph is not a child and that is why its style is not affected. </p>
+
+        <h1> Descendent selector </h1>
+        <p> This is how we apply to any child, independently wether it is a direct child or not. The syntax is as follows: 
+            parent&nbsp;child {} (i.e. article&nbsp;p {} - every p that is a descendent child of article)
+        </p>
+        <article> 
+            <p> Child selector is applied to this paragraph. </p>
+            <div> <span> Descendent selector is applied to this "span". </span></div>
+        </article>
+        <span> However, this "span" is not a child of article and style is not applied. </span>
+
+        <h1> Not limited to element selectors </h1>
+        <p> There is also a way that this is not limited to a particular selector. Examples of it are:</p>
+        <ul>
+            <li><div> .myclass p {} (every "p" that is inside (at any level) an element with class ="myclass")</div></li>
+            <li><div> article &gt; .myclass {} (every "element" with class="myclass" that is a direct child of article element</div></li> 
+        </ul>    
+    </body> 
+</html>
