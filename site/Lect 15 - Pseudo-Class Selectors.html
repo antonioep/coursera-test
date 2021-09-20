@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lecture 15 - Pseudo-Class Selectors </title>
+        <style>
+            header li {
+                color : green;
+                list-style: none;
+            }
+            a:link, a:visited {
+                text-decoration: none;
+                background-color: green;
+                border: 1px solid blue;
+                color: black;
+                display: block;
+                width: 200px;
+                text-align: center;
+                margin-bottom: 4px;
+            }
+            a:hover, a:active {
+                background-color: red;
+                color: purple;
+            }
+            header li:nth-child(3) {
+                font-size: 20px;
+            }
+            section div:nth-child(odd) {
+                background-color: grey;
+            }
+            section div:nth-child(4):hover {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Lecture 15 - Pseudo-Class Selectors </h1>
+        <header>
+            <ul>
+                <li> <a href="https://www.realbetisbalompie.es/" target="_blank"> RBB </a>  </li>
+                <li> <a href="https://www.marca.com/" target="_blank"> Marca </a> </li>
+                <li> <a href="https://www.LinkedIn.com/" target="_blank"> LinkedIn </a> </li>
+            </ul>
+        </header>
+        <section>
+            <div> section 1 </div>
+            <div> section 2 </div>
+            <div> section 3 </div>
+            <div> section 4 </div>
+            <div> section 5 </div>
+            <div> section 6 </div>
+            <div> section 7 </div>
+            <div> section 8 </div>
+            <div> section 9 </div>
+        </section>
+    </body>
+</html>
