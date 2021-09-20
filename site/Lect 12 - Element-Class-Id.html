@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+        <meta charset="utf-8">
+        <title>Lecture 12 - Element-Class-ID</title>
+        <style>
+            .myclass {
+                color : red; 
+            }
+            #myid {
+                color : black;
+                font-size: 20px; 
+                font-weight: bold;
+            }
+            .selector1, #selector2 {
+                color : green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Element </h1>
+        <p> 
+            Element refers to the tag for which we want to apply style i.e.  &lt;p&gt;.
+            This style is applied to everytime we use the specific tag! 
+        </p>
+
+        <h1> Class </h1>
+        <p> 
+            In this case, we can build a class with a specif style which can be apply to any tag
+            when is specified so. i.e. &lt;p class="myclass"&gt;. 
+        </p>
+        <p 
+            class="myclass"> this paragraph is using "myclass" style, this can be defined within &lt;head&gt;
+            tag or in the ".css" file.
+        </p>
+
+        <h1> ID Selector </h1>
+        <p>
+            We can also define an id name as it is defined in the &lt;head&gt; and it can be used as: 
+            &lt;div id="myid"&gt; 
+        </p>
+        <div> this "div" uses the id style "myid"</div><div id="myid"> Keep in mind that "id" can only be applied to one element.</div>
+        
+        <h1> Grouping selectors</h1>
+        <p class = "selector1"> We can also group several selectors which have the same style as follows:</p>
+        <div id="selector2"> selector1, selector2 = { color = green; } </div> 
+
+
+    </body>
+</html>
