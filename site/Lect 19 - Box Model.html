@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lecture 19 - The Box Model </title>
+        <style>
+            h1 {
+                margin-bottom: 30pxs;
+                background-color: grey;
+            }
+            h2 {
+                margin-bottom: 30pxs;
+                background-color: grey;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: lightblue;
+            }
+            #box1 {
+                background-color: green;
+                padding: 10px;
+                border: 5px solid black;
+                margin: 40px 40px 40px 40px;
+                width: 400px;
+                box-sizing: border-box;
+            }
+            #box2 {
+                background-color: green;
+                padding: 10px;
+                border: 5px solid black;
+                margin: 60px 40px 40px 40px;
+                width: 400px;
+            }
+            #box3 {
+                background-color: green;
+                padding: 10px;
+                border: 5px solid black;
+                margin: 40px 40px 10px 40px;
+                width: 400px;
+                height: 50px;
+            }
+            #box4 {
+                background-color: green;
+                padding: 10px;
+                border: 5px solid black;
+                margin: 40px 40px 10px 40px;
+                width: 400px;
+                height: 50px;
+                overflow: auto;
+            }
+            #content {
+                background-color: red;
+            }
+        </style>
+        <body>
+            <h1> Lecture 19 - The Box Model</h1>
+            <div id="box1">
+                <div id="content">
+                    box-sizing is used to keep the box sizing to the specified with, otherwise it is only applied to the content. 
+                    Be aware that box-sizing cannot be inhereted by children. An alternative way to do that is to tell that it 
+                    should be applied to every content -&gt;  * {border-sizing: border-box}. We can also use this feature to overwrite
+                    any default style set by the browser.
+                </div>
+            </div>
+            <div id="box2">
+                <div id="content">
+                    box-sizing is not applied here and therefore the box width is actually &gt; 400.
+                </div>
+            </div>
+
+            <h2> Margins </h2>
+            <div id = "box1">
+                <div id = "content">
+                    Margins are cumulative when horizontal but not when vertical. In the latter case, the highest margin found will remain. 
+                    In this example, even though we have a margin botttom of 40px in box1 and a margin top of 60px in box2, the vertical margin will be 60px and not 100px.
+                </div> 
+            </div>
+
+            <h2> Overflow </h2>
+            <div id = "box3">
+                <div id = "content">
+                    What happens if we fix both the width and height of our box without using overflow? in this case, it will show the text outside the box and if we 
+                    include more text in a new "div" for example, both texts will be over each other since the next "div" is placed just after the box. This is an example of it. 
+                </div> 
+            </div>
+            <div>
+                This is an example of it. 
+            </div>
+            
+            <div id = "box4">
+                <div id = "content">
+                    This problem can be solved when using the tag: "overflow". "sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,
+                    sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,
+                    sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,sometext,"
+                </div> 
+            </div>
+
+        </body>
+    </head>
+</html>
