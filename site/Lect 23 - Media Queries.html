@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lecture 23 - Media Queries</title>
+        <style> 
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black; 
+            background-color: blueviolet;
+            overflow: auto;
+        }
+        /*** targeting large screens ***/
+        @media (min-width: 1240px) {
+            #p1, #p2 {
+                width: 500px;
+                height: 50px;
+                background-color: chartreuse;
+            }
+        }
+        /*** targeting medium screens ***/
+        @media (min-width: 999px) and (max-width: 1239px) {
+            #p1, #p2 {
+                width: 250px;
+                height: 50px;
+                background-color: rgb(255, 72, 0);
+            }
+        }
+        </style>
+    </head>
+    <body> 
+        <h1> Lecture 23 - Media Queries</h1>
+        <p id="p1"> Hello, mi achiamo Antonio, e tu? de dove sei? </p>
+        <p id="p2"> Ciao Antonio, mi chiamo Laura, piacere di conocerti </p>
+        <ul> 
+            <li> Basic syntax of a media query </li>
+            <ul> 
+                <li> @media (media feature) </li>
+                <li> @media (media feature) logical operator (media feature) </li>
+            </ul>
+            <li> Remember not to overlap breakpoints </li>
+            <li> Usually, you provide base styling </li>
+            <ul>
+                <li> Then, change or add to them in each media query </li>     
+            </ul>
+        </ul>
+    </body>
+</html>
