@@ -1,4 +1,4 @@
-- making easier to track changes: browser-sync start --server --directory --files "*
+- making easier to track changes: browser-sync start --server --directory --files "**/*"
 - git add . / git commit -m "" / git push
 - github webpage: https://antonioep.github.io/coursera-test/site/
 
